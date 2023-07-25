@@ -53,3 +53,27 @@ header {
     bottom: -50px;
     z-index: -1;
 }
+.clock span {
+    font-size: 2em;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after {
+    /* content: "HOURS"; */
+    font-size: 1rem;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hours::after {
+    content: "HOURS";
+}
+#minutes::after {
+    content: "MINUTES";
+}
+#seconds::after {
+    content: "SECONDS";
+}
